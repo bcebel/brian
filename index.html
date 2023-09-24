@@ -2015,7 +2015,7 @@ limitations under the License.
       align-items: center;
       -ms-flex-pack: center;
       justify-content: center;
-      z-index: 100;
+      z-index: 1;
     }
 
     .gallery-header .gallery-nav {
@@ -2235,7 +2235,7 @@ limitations under the License.
       height: 100%;
       top: 0;
       left: 0;
-      z-index: 2;
+      z-index: 3;
     }
 
     .gallery-landing-image-wrapped:nth-child(odd) {
@@ -2361,7 +2361,7 @@ limitations under the License.
       animation-delay: -2s;
       width: 28vh;
       top: 5vh;
-      left: 45vh;
+      left: 50vh;
     }
 
     .gallery-landing-image-wrap:nth-child(2) .gallery-landing-image-transform {
@@ -2557,7 +2557,7 @@ limitations under the License.
       animation-delay: -2s;
       width: 30vh;
       top: 2vh;
-      left: 217vh;
+      left: 210vh;
     }
 
     .gallery-landing-image-wrap:nth-child(9) .gallery-landing-image-transform {
@@ -2613,7 +2613,7 @@ limitations under the License.
       animation-delay: -6s;
       width: 30vh;
       top: 52vh;
-      left: 220vh;
+      left: 215vh;
     }
 
     .gallery-landing-image-wrap:nth-child(11) .gallery-landing-image-transform {
@@ -2809,7 +2809,7 @@ limitations under the License.
       animation-delay: -12s;
       width: 30vh;
       top: 50vh;
-      left: 252vh;
+      left: 222vh;
     }
 
     .gallery-landing-image-wrap:last-child .gallery-landing-image-transform {
@@ -2842,7 +2842,7 @@ limitations under the License.
       position: absolute;
       top: 1.5vh;
       left: calc(-6% - 2.5vh);
-      z-index: 40;
+      z-index: 400;
       color: #fff;
     }
 
@@ -2905,7 +2905,7 @@ limitations under the License.
       transform: scaleX(0) rotateX(1turn);
       transform-origin: top left;
       transition: all 0.2s ease-in-out;
-      z-index: 1;
+      z-index: 500;
     }
 
     @keyframes c {
@@ -3276,7 +3276,7 @@ limitations under the License.
     .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-icon,
     .ampstart-nav-item:nth-child(2) .gallery-sidebar-nav-item-text {
       color: #fff;
-      z-index: 1;
+      z-index: 100;
       mix-blend-mode: difference;
       -webkit-font-smoothing: antialiased;
     }
@@ -3298,7 +3298,7 @@ limitations under the License.
     .gallery-sidebar-nav-item-icon,
     .gallery-sidebar-nav-item-text,
     .gallery-sidebar-nav-item:before {
-      z-index: 1;
+      z-index: 1000;
     }
 
     @media (min-width: 40.06rem) and (min-height: 40.06rem) {
@@ -3524,7 +3524,7 @@ limitations under the License.
         <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
           <a href="https://bcebel.github.io/met/" target="_blank" class="gallery-landing-image-link"></a>
           <figcaption
-            class="gallery-landing-image-caption gallery-landing-image-caption-right gallery-landing-image-caption-bottom gallery-landing-image-caption-content">
+            class="gallery-landing-image-caption gallery-landing-image-caption-left gallery-landing-image-caption-bottom gallery-landing-image-caption-content">
             <h2 class="h4 regular">Weather App</h2>
             <h3 class="h4 regular" role="author">&nbsp; &nbsp; &nbsp &nbsp API</h3>
             <a href="https://bcebel.github.io/met/" target="_blank"
@@ -3602,18 +3602,19 @@ limitations under the License.
           </div>
         </figure>
         <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
-          <a href="https://bcebel.github.io/WebAPICodeQuiz/" target="_blank" class="gallery-landing-image-link"></a>
-          <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content">
-            <h2 class="h4 regular">Quiz Wars</h2>
-            <h3 class="h4 regular" role="author">Vanilla Javascript</h3>
-            <a href="https://bcebel.github.io/WebAPICodeQuiz/" target="_blank"
+          <a href="https://brython-e2a8d95106d7.herokuapp.com/" target="_blank" class="gallery-landing-image-link"></a>
+          <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content
+                      gallery-landing-image-caption-top">
+            <h2 class="h4 regular">Just Tech News</h2>
+            <h3 class="h4 regular" role="author">Python</h3>
+            <a href="https://brython-e2a8d95106d7.herokuapp.com/" target="_blank"
               class="gallery-landing-caption-link inline-block">View</a>
           </figcaption>
           <div class="gallery-landing-image-transform">
-            <amp-img width="1" height="1" layout="responsive" noloading="" src="./img/gallery/building.jpg" srcset="
-          ./img/gallery/building.jpg 1x,
-          ./img/gallery/building@2x.jpg 2x
-        " alt="black and white building"></amp-img>
+            <amp-img width="8" height="12" layout="responsive" noloading="" src="./img/gallery/court.jpg" srcset="
+                  ./img/gallery/court.jpg 1x,
+                  ./img/gallery/court@2x.jpg 2x
+                " alt="basketball court"></amp-img>
           </div>
         </figure>
         <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
@@ -3653,7 +3654,7 @@ limitations under the License.
           <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content
               gallery-landing-image-caption-bottom">
             <h2 class="h4 regular">Tech Blog</h2>
-            <h3 class="h4 regular" role="author">SQL & HANDLEBARS</h3>
+            <h3 class="h4 regular" role="author">SQL</h3>
             <a href="https://sleepy-caverns-33323.herokuapp.com/" target="_blank"
               class="gallery-landing-caption-link inline-block">View</a>
           </figcaption>
@@ -3664,22 +3665,7 @@ limitations under the License.
         " alt="sunrise against a pink lake"></amp-img>
           </div>
         </figure>
-        <figure class="gallery-landing-image-wrapped gallery-landing-image-wrap">
-          <a href="https://brython-e2a8d95106d7.herokuapp.com/" target="_blank" class="gallery-landing-image-link"></a>
-          <figcaption class="gallery-landing-image-caption gallery-landing-image-caption-content
-              gallery-landing-image-caption-bottom">
-            <h2 class="h4 regular">Just Tech News</h2>
-            <h3 class="h4 regular" role="author">Python</h3>
-            <a href="https://brython-e2a8d95106d7.herokuapp.com/" target="_blank"
-              class="gallery-landing-caption-link inline-block">View</a>
-          </figcaption>
-          <div class="gallery-landing-image-transform">
-            <amp-img width="8" height="12" layout="responsive" noloading="" src="./img/gallery/court.jpg" srcset="
-          ./img/gallery/court.jpg 1x,
-          ./img/gallery/court@2x.jpg 2x
-        " alt="basketball court"></amp-img>
-          </div>
-        </figure>
+
       </div>
     </amp-carousel>
 
