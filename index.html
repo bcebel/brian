@@ -2248,6 +2248,7 @@ limitations under the License.
       box-shadow: 1vh 6vh 5vh rgba(6, 7, 22, 0.15);
       transition: transform 0.3s;
       pointer-events: none;
+      border-radius: 5%;
     }
 
     .gallery-landing-image-wrap:first-child amp-img {
@@ -2331,10 +2332,11 @@ limitations under the License.
       animation-delay: 0s;
       width: 24vh;
       top: 10vh;
-      left: 12vh;
+      left: 15vh;
     }
 
     .gallery-landing-image-wrap:first-child .gallery-landing-image-transform {
+
       width: 100%;
       height: 100%;
       transform: matrix3d(1.521661,
@@ -2833,6 +2835,7 @@ limitations under the License.
 
     .gallery-landing-image-wrapped .gallery-landing-image-transform {
       transform-origin: 0 0 0;
+      
     }
 
     .gallery-landing-image-caption {
@@ -3056,7 +3059,14 @@ limitations under the License.
     .ampstart-headerbar .ampstart-navbar-trigger {
       padding: 0;
       margin-top: 20px;
+      color: rgb(0, 0, 0);
+      backdrop-filter: blur(10px);
+      background-color: azure;
+      opacity: 0.75;
+border-radius: 50%;
     }
+  
+    
 
     .gallery-sidebar .ampstart-navbar-trigger {
       height: 2.35rem;
@@ -3378,6 +3388,10 @@ limitations under the License.
       .gallery-component-tagline>div {
         transform: rotate(-90deg) translate(-100%);
         transform-origin: top left;
+              backdrop-filter: blur(100px);
+              background-color: azure;
+              opacity: 0.7;
+            
       }
     }
   </style>
@@ -3407,7 +3421,7 @@ limitations under the License.
     <nav class="ampstart-sidebar-nav ampstart-nav">
       <ul class="list-reset m0 p0 ampstart-label">
         <li role="heading" class="ampstart-sidebar-nav-title">
-          Current Exhibitions
+          Projects
         </li>
         <li class="ampstart-nav-item gallery-sidebar-nav-item">
           <a class="ampstart-nav-link" href="./gallery.amp.html">
@@ -3437,7 +3451,7 @@ limitations under the License.
         <li class="ampstart-nav-item gallery-sidebar-nav-item">
           <a class="ampstart-nav-link" href="./gallery-inner.amp.html">
             <div class="gallery-sidebar-nav-item-text">
-               Portfolio<br />NextJS
+              Portfolio<br />NextJS
             </div>
             <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
               src="./img/gallery/court.jpg"
@@ -3470,8 +3484,7 @@ limitations under the License.
               Short Circuit<br />Anna Moss
             </div>
             <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/gallery/lamp.jpg"
-              srcset="./img/gallery/lamp.jpg 1x, ./img/gallery/lamp@2x.jpg 2x"></amp-img>
+              src="./img/gallery/lamp.jpg" srcset="./img/gallery/lamp.jpg 1x, ./img/gallery/lamp@2x.jpg 2x"></amp-img>
             <div class="gallery-sidebar-nav-item-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline>
@@ -3515,8 +3528,7 @@ limitations under the License.
               Short Circuit<br />Anna Moss
             </div>
             <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/gallery/lamp.jpg"
-              srcset="./img/gallery/lamp.jpg 1x, ./img/gallery/lamp@2x.jpg 2x"></amp-img>
+              src="./img/gallery/lamp.jpg" srcset="./img/gallery/lamp.jpg 1x, ./img/gallery/lamp@2x.jpg 2x"></amp-img>
             <div class="gallery-sidebar-nav-item-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline>
@@ -3530,8 +3542,7 @@ limitations under the License.
               Short Circuit<br />Anna Moss
             </div>
             <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/gallery/lamp.jpg"
-              srcset="./img/gallery/lamp.jpg 1x, ./img/gallery/lamp@2x.jpg 2x"></amp-img>
+              src="./img/gallery/lamp.jpg" srcset="./img/gallery/lamp.jpg 1x, ./img/gallery/lamp@2x.jpg 2x"></amp-img>
             <div class="gallery-sidebar-nav-item-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline>
@@ -3545,8 +3556,7 @@ limitations under the License.
               Short Circuit<br />Anna Moss
             </div>
             <amp-img class="gallery-sidebar-nav-item-image" width="1" height="1" layout="responsive"
-              src="./img/gallery/lamp.jpg"
-              srcset="./img/gallery/lamp.jpg 1x, ./img/gallery/lamp@2x.jpg 2x"></amp-img>
+              src="./img/gallery/lamp.jpg" srcset="./img/gallery/lamp.jpg 1x, ./img/gallery/lamp@2x.jpg 2x"></amp-img>
             <div class="gallery-sidebar-nav-item-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                 <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"></polyline>
@@ -3562,7 +3572,7 @@ limitations under the License.
   <!-- End Navbar -->
 
   <div class="gallery-component-tagline xs-hide">
-    <div>Brian Ebel Web Developer</div>
+    <div>&nbsp; MORE INFO -> </div>
   </div>
   <main id="content" class="gallery-base-content fit" role="main">
     <h1
