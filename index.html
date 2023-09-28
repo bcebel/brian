@@ -1437,10 +1437,15 @@ limitations under the License.
       clip: rect(1px, 1px, 1px, 1px);
     }
 
-    @media (max-width: 40rem) {
+    @media (max-height: 500px) {
       .xs-hide {
         display: none;
       }
+      .i-amphtml-element {
+        width: 3em;
+        margin-top: 1em;
+      }
+      
     }
 
     @media (min-width: 40.06rem) and (max-width: 52rem) {
@@ -1975,9 +1980,13 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(9,53,173,1) 0%, rgba(
       box-shadow: 1.5vh 7vh 6vh rgba(6, 7, 22, 0.15);
     }
 
-    @media (max-height: 40rem) {
+    @media (max-height: 300px) {
       .v-xs-hide {
         display: none;
+      }
+      amp-img {
+        height: 1;
+        width: 2;
       }
     }
 
